@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+    
+</head>
+<body style="
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+">
+
+<header>
+    <h1>Bus Ticket Payment</h1>
+</header>
+
+<div class="booking-box">
+    <h2>Choose Payment Method</h2>
+
+    <p><b>Amount:</b> ₹500</p>
+
+    <form onsubmit="return payNow()">
+
+        <input type="radio" name="pay" required> UPI<br><br>
+        <input type="radio" name="pay"> Debit Card<br><br>
+        <input type="radio" name="pay"> Credit Card<br><br>
+        <input type="radio" name="pay"> Net Banking<br><br>
+
+        <button type="submit">Pay Now</button>
+    </form>
+
+    <p id="msg"></p>
+</div>
+
+<script src="payment.js"></script>
+</body>
+</html>

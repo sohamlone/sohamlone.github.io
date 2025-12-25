@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <title>Bus Ticket Booking</title>
+</head>
+
+<body style="
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+">
+
+<div class="booking-box">
+    <h2>Book Your Bus Ticket</h2>
+
+    
+    <form action="book_ticket.html" method="get">
+
+        <label>From</label>
+        <select name="from">
+            <option>Delhi</option>
+            <option>Mumbai</option>
+            <option>Pune</option>
+            <option>Bangalore</option>
+        </select>
+
+        <label>To</label>
+        <select name="to">
+            <option>Mumbai</option>
+            <option>Delhi</option>
+            <option>Pune</option>
+            <option>Bangalore</option>
+        </select>
+
+        <label>Date</label>
+        <input type="date" name="date">
+
+        <label>Seats</label>
+        <input type="number" name="seats" min="1" max="6">
+
+        <button type="submit">Book Ticket</button>
+
+    </form>
+</div>
+
+</body>
+</html>
